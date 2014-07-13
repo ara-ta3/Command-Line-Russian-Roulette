@@ -10,6 +10,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define :web1 do |web|
     web.vm.network :private_network, ip: "192.168.56.101"
-    web.vm.provision :shell, :path => "script/setup.sh",privileged: false
+    web.vm.provision :shell, :path => "script/setup.sh"
   end
 end
